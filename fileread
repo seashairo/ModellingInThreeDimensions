@@ -1,0 +1,11 @@
+import re
+
+text = 'gfgfdAAA1234ZZZuijjAAA43563425ZZZ'
+
+try:
+    found = re.search('AAA(.+?)ZZZ', text).group(1)
+except AttributeError:
+
+    found = ''
+
+print found
