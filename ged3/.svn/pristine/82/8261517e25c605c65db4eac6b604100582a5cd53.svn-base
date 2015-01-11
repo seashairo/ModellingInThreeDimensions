@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B445F1E-B4C3-430E-89B4-B0FD75FC7781}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ModellingInThreeDimensions</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dx9.lib;d3dx10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="data\cube.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3DManagerClass.h" />
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="ActionManager.h" />
+    <ClInclude Include="AI.h" />
+    <ClInclude Include="BasicShaderClass.h" />
+    <ClInclude Include="BumpmapShaderClass.h" />
+    <ClInclude Include="CameraClass.h" />
+    <ClInclude Include="CommonHeader.h" />
+    <ClInclude Include="Condition.h" />
+    <ClInclude Include="DeptShaderClass.h" />
+    <ClInclude Include="EntityPack.h" />
+    <ClInclude Include="FoliageShaderClass.h" />
+    <ClInclude Include="FrustumClass.h" />
+    <ClInclude Include="GlassShaderClass.h" />
+    <ClInclude Include="GraphicsClass.h" />
+    <ClInclude Include="InputClass.h" />
+    <ClInclude Include="LightClass.h" />
+    <ClInclude Include="LightShaderClass.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="EntityClass.h" />
+    <ClInclude Include="Maya3DImporter.h" />
+    <ClInclude Include="MeshClass.h" />
+    <ClInclude Include="OctreeSceneGraph.h" />
+    <ClInclude Include="ParallaxShaderClass.h" />
+    <ClInclude Include="ReflectionShaderClass.h" />
+    <ClInclude Include="RefractionShaderClass.h" />
+    <ClInclude Include="rendertextureclass.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResourceManagerClass.h" />
+    <ClInclude Include="SceneGraphClass.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="ShadowShaderClass.h" />
+    <ClInclude Include="SkyboxShaderClass.h" />
+    <ClInclude Include="SoundClass.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="SystemClass.h" />
+    <ClInclude Include="TerrainShaderClass.h" />
+    <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="TextureClass.h" />
+    <ClInclude Include="TextureOnlyShaderClass.h" />
+    <ClInclude Include="TextureShaderClass.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Transition.h" />
+    <ClInclude Include="VertexHeader.h" />
+    <ClInclude Include="WaterShaderClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3DManagerClass.cpp" />
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="ActionManager.cpp" />
+    <ClCompile Include="AI.cpp" />
+    <ClCompile Include="BasicShaderClass.cpp" />
+    <ClCompile Include="BumpmapShaderClass.cpp" />
+    <ClCompile Include="CameraClass.cpp" />
+    <ClCompile Include="Condition.cpp" />
+    <ClCompile Include="DepthShaderClass.cpp" />
+    <ClCompile Include="EntityPack.cpp" />
+    <ClCompile Include="FoliageShaderClass.cpp" />
+    <ClCompile Include="FrustumClass.cpp" />
+    <ClCompile Include="GlassShaderClass.cpp" />
+    <ClCompile Include="GraphicsClass.cpp" />
+    <ClCompile Include="InputClass.cpp" />
+    <ClCompile Include="LightClass.cpp" />
+    <ClCompile Include="LightShaderClass.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="EntityClass.cpp" />
+    <ClCompile Include="Maya3DImporter.cpp" />
+    <ClCompile Include="MeshClass.cpp" />
+    <ClCompile Include="ModellingInThreeDimensions.cpp" />
+    <ClCompile Include="OctreeSceneGraph.cpp" />
+    <ClCompile Include="ParallaxShaderClass.cpp" />
+    <ClCompile Include="ReflectionShaderClass.cpp" />
+    <ClCompile Include="RefractionShaderClass.cpp" />
+    <ClCompile Include="rendertextureclass.cpp" />
+    <ClCompile Include="ResourceManagerClass.cpp" />
+    <ClCompile Include="SceneGraphClass.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="ShadowShaderClass.cpp" />
+    <ClCompile Include="SkyboxShaderClass.cpp" />
+    <ClCompile Include="SoundClass.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="SystemClass.cpp" />
+    <ClCompile Include="TerrainShaderClass.cpp" />
+    <ClCompile Include="Texture2D.cpp" />
+    <ClCompile Include="TextureClass.cpp" />
+    <ClCompile Include="TextureOnlyShaderClass.cpp" />
+    <ClCompile Include="TextureShaderClass.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Transition.cpp" />
+    <ClCompile Include="WaterShaderClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ModellingInThreeDimensions.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\seafloor.dds" />
+    <Image Include="ModellingInThreeDimensions.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\Basic.fx">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fxc /Fc /Od /Zi /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"</AdditionalIncludeDirectories>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fxc compile for debug: %(FullPath)</EntryPointName>
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="data\texture.fx">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fxc /Fc /Od /Zi /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"</AdditionalIncludeDirectories>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fxc compile for debug: %(FullPath)</EntryPointName>
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\TextureOnly.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\Skybox.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\parallax_normal_mapping.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\BumpMapEffect.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\glass.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\Parallax_Mapping.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\CausticsEffect.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\water\water.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\Shadow\depth.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="data\Shadow\shadow.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\terrain\terrain.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\foliage\foliage.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="data\reflection.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="data\refraction.fx">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

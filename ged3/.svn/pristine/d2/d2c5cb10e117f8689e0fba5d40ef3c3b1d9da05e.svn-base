@@ -1,0 +1,11 @@
+<Material MtlFlags="524320" Shader="Terrain.Layer" GenMask="20C000000" StringGenMask="%OFFSETBUMPMAPPING%PARALLAX_OCCLUSION_MAPPING%TEMP_TERRAIN" SurfaceType="mat_soil" MatTemplate="" Diffuse="0.86713552,0.86713552,0.86713552" Specular="5.0770514e-006,5.0770514e-006,5.0770514e-006" Emissive="0,0,0" Shininess="8" Opacity="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/sand/sanddusty_diff.dds">
+   <TexMod TileU="0.30000001" TileV="0.30000001"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/sand/sanddusty_ddn.dds">
+   <TexMod TileU="0.30000001" TileV="0.30000001"/>
+  </Texture>
+ </Textures>
+ <PublicParams FresnelPower="4" DetailTextureStrength="0.40000001" PomDisplacement="0.016000001" FresnelScale="1" FresnelBias="1" SelfShadowStrength="2.5" ObmDisplacement="0.0089999996" HeightBias="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

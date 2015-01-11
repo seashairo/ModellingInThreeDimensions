@@ -1,0 +1,22 @@
+COMMENTED OUT CODE:
+
+File            Line
+
+EntityPack.cpp  95
+
+GraphicsClass.cpp 1859
+                  2013
+
+maya3DImporter.cpp 73
+                   354
+                   384
+
+MeshClass.cpp      221
+                   259
+                   1065
+                   1553
+                   1579
+                   1582
+
+OctreeSceneGraph.cpp 62
+                 

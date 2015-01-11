@@ -1,0 +1,22 @@
+-----KnownBugs-----
+
+Glass&Water - Refraction Is mutually exclusive e.g. glass can't render any other entity that uses it such as water and vice versa.
+Known - Shader Issue.
+
+Sound - The Orientation of the listener dosen't seam to set correctly.
+Unknown.
+
+Shadow Mapping - Jaggedy edges due to no soft shadowing on entity.
+Known - no soft shadows, possibly window Size.
+
+Parallax Occlusion - Normals Calculated don't produce the expected normals for certain models.
+Known - Hand Calculation used.
+
+AI - Rapid Clicking Casues cubes to retreat away from clicking source.
+Known - AI object Oritation to begin pathfinding starts with back tracking.
+
+AI - Certain Entities Jitter when pursueing.
+Known - Pursueing entities Move faster.
+
+Glass&Water - Water Reflection has an osscellating rythmic motion.
+Known - Water ripple done using a normal map movement bouncing between -0.5 and 0.5 a better method needs to be found. 
